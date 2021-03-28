@@ -1,244 +1,291 @@
-// // --створити масив та вивести його в консоль:
-//     - з 5 числових значень
-// - з 5 стічкових значень
-// - з 5 значень стрічкового, числового та булевого типу
+//- присвоить каждому из следующих значений свою переменную: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false Вывести каждую при помощи console.log , alert, document.write
+let str1 = 'hello';
+console.log(str1);
+document.write(str1);
+alert(str1);
 
-// let array1 = [1, 2, 3, 4, 5];
-// console.log(array1);
-//
-// let array2 = ['Vasya', 'Petya', 'Kolya', 'Olya', 'Sasha'];
-// console.log(array2);
-//
-// let array3 = [1, 'Dima', true, 2, "Katya", false];
-// console.log(array3);
-//
-//
-// //-- Створити пустий масив. Наповнити його будь-якими значеннями звертаючись до конкретного індексу. Вивести в консоль
-//
-// let array4 = [];
-// array4[0] = 1;
-// array4[1] = 2;
-// array4[2] = 3;
-// array4[3] = 4;
-// array4[4] = 5;
-// console.log(array4);
+let str2 = 'owu';
+console.log(str2);
+document.write(str2);
+alert(str2);
 
+let str3 = 'com';
+console.log(str3);
+document.write(str3);
+alert(str3);
 
-//- За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом всередині
+let str4 = 'ua';
+console.log(str4);
+document.write(str4);
+alert(str4);
 
-// for (let i = 0; i < 10; i++) {
-//     document.write(`<div>довільний текст</div>`);
-// }
+let str5 = 1;
+console.log(str5);
+document.write(str5);
+alert(str5);
 
+let str6 = 10;
+console.log(str6);
+document.write(str6);
+alert(str6);
 
-// // //- За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
-// //
-//
-// for (let i = 0; i < 10; i++) {
-//     document.write(`<div>${i} довільний текст</div>`)
-// }
+let str7 = -999;
+console.log(str7);
+document.write(str7);
+alert(str7);
 
+let str8 = 123;
+console.log(str8);
+document.write(str8);
+alert(str8);
 
-//- За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
+let str9 = 3.14;
+console.log(str9);
+document.write(str9);
+alert(str9);
 
-// let i = 0;
-// while (i < 20) {
-//     document.write(`<h1>довільний текст</h1>`);
-//     i++;
-// }
-//
-// //- За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
-//
-// let i = 0;
-// while (i < 20) {
-//     document.write(`<h1>довільний текст ${i}</h1> `);
-//     i++;
-// }
+let str10 = 2.7;
+console.log(str10);
+document.write(str10);
+alert(str10);
 
+let str11 = 16;
+console.log(str11);
+document.write(str11);
+alert(str11);
 
-//- Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
+let str12 = true;
+console.log(str12);
+document.write(str12);
+alert(str12);
 
-// let array5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-//
-// for (let i = 0; i <array5.length; i++) {
-//     console.log(array5[i]);
-// }
+let str13 = false;
+console.log(str13);
+document.write(str13);
+alert(str13);
 
+// // - переопределить каждую переменную из задания 1 дав им произвольные значения Вывести каждую при помощи console.log , alert, document.write
+str1 = 'hi';
+console.log(str1);
+document.write(str1);
+alert(str1);
 
-//- Створити масив з 10 строкрових елементів. Вивести в консоль всі його елементи в циклі.
-//
-// let array6 = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten'];
-//
-//
-// i=0;
-// while (i < array6.length) {
-//     console.log(array6[i]);
-//     i++;
-// }
+str2 = 'okten';
+console.log(str2);
+document.write(str2);
+alert(str2);
 
+str3 = 'seznam';
+console.log(str3);
+document.write(str3);
+alert(str3);
 
-// //
-// // // - Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
-//
-// let array7 = [1, true, 2, false, 3, 'hello', 4, 'world', 5, true];
-//
-// for (const array7Element of array7) {
-//     console.log(array7Element);
-// }
+str4 = 'pl';
+console.log(str4);
+document.write(str4);
+alert(str4);
 
+str5 = 2;
+console.log(str5);
+document.write(str5);
+alert(str5);
 
-//- Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
+str6 = 11;
+console.log(str6);
+document.write(str6);
+alert(str6);
 
-// let array7 = [1, true, 2, false, 3, 'hello', 4, 'world', 5, 'true'];
+str7 = -1000;
+console.log(str7);
+document.write(str7);
+alert(str7);
 
-// for (let i = 0; i < array7.length; i++) {
-//     if (typeof array7[i] === "boolean") {
-//
-//         console.log(array7[i]);
-//     }
-//
-// }
+str8 = 124;
+console.log(str8);
+document.write(str8);
+alert(str8);
 
-//- Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки числові елементи
+str9 = 3.15;
+console.log(str9);
+document.write(str9);
+alert(str9);
 
-// let array7 = [1, true, 2, false, 3, 'hello', 4, 'world', 5, 'true']; // через while не працює, це норм???
-// i = 0;
-// while (i < array7.length) {
-//     if (typeof array7[i] === "number") {
-//         console.log(array7[i]);
-//         i++;
-//     }
-// }
+str10 = 3.7;
+console.log(str10);
+document.write(str10);
+alert(str10);
 
+str11 = 18;
+console.log(str11);
+document.write(str11);
+alert(str11);
 
-//- Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки рядкові елементи
+str12 = false;
+console.log(str12);
+document.write(str12);
+alert(str12);
 
-// let array7 = [1, true, 2, false, 3, 'hello', 4, 'world', 5, 'true'];
-//
-// for (const array7Element of array7) {
-//     if (typeof array7Element === 'string') {
-//         console.log(array7Element);
-//     }
-// }
+str13 = true;
+console.log(str13);
+document.write(str13);
+alert(str13);
 
+//- Создать 3 числовых и 3 стринговых константы. Вывести каждую при помощи console.log , alert, document.write
+const number1 = 1;
+const number2 = 2;
+const number3 = 3;
 
-// - Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів. Вивести в консоль всі його елементи в циклі.
+console.log(number1);
+console.log(number2);
+console.log(number3);
 
-// let arr = [];
-// arr.push(1, 2, 3, 4, 5, true, false, 'hello', 'world', 'okten');
-//
-// for (let arrElement of arr) {
-//     console.log(arrElement);
-// }
-//
-// // я нз як це малось на увазі правильно, бо в завчанні говоритсья, що до індекса звертатись, то може так:
-//
-// let arr2 = [];
-// arr2[0] = 'hello';
-// arr2[1] = 'world';
-// arr2[2] = 'okten';
-// arr2[3] = true;
-// arr2[4] = false;
-// arr2[5] = 1;
-// arr2[6] = 2;
-// arr2[7] = 3;
-// arr2[8] = 4;
-// arr2[9] = 5;
-//
-// for (let i = 0; i < arr2.length; i++) {
-//     console.log(arr2[i]);
-// }
+document.write(number1);
+document.write(number2);
+document.write(number3);
+
+alert(number1);
+alert(number2);
+alert(number3);
 
 
-//- Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+const str14 = 'four';
+const str15 = 'five';
+const str16 = 'six';
 
-// for (let i = 0; i < 10; i++) {
-//     console.log(i);
-//     document.write(i);
-//     document.write(`<br>`);
-// }
+console.log(str14);
+console.log(str15);
+console.log(str16);
+
+document.write(str14);
+document.write(str15);
+document.write(str16);
+
+alert(str14);
+alert(str15);
+alert(str16);
+
+//- при помощи 3х разных prompt() получить 3 слова которые являются вашими ФИО. Для фамилии имени и отчества создать разные переменные. Вывести каждую при помощи console.log , alert, document.write
+
+let lastName = prompt('Введіть, будь ласка, своє прізвище');
+let name = prompt('Введіть, будь ласка, своє імя');
+let fathersName = prompt('Введіть, будь ласка, по-батькові');
+
+console.log(lastName);
+console.log(name);
+console.log(fathersName);
+
+document.write(lastName);
+document.write(name);
+document.write(fathersName);
+
+alert(lastName);
+alert(name);
+alert(fathersName);
+
+//- Взять переменные из задания 4 и сконкатенировать их в одной переменной person.
+
+let person = lastName + ' ' + name + ' ' + fathersName;
+console.log(person);
+
+// - Взять задние 4 и 5 и применить его к ФИО всех членов своей семьи.
+let lastName2 = prompt('Введіть, будь ласка, прізвище матері');
+let name2 = prompt('Введіть, будь ласка, імя матері');
+let fathersName2 = prompt('Введіть, будь ласка, по-батькові матері');
+
+let lastName3 = prompt('Введіть, будь ласка, прізвище батька');
+let name3 = prompt('Введіть, будь ласка, імя батька');
+let fathersName3 = prompt('Введіть, будь ласка, по-батькові батька');
+
+let lastName4 = prompt('Введіть, будь ласка, прізвище брата чи сестри');
+let name4 = prompt('Введіть, будь ласка, імя брата чи сестри');
+let fathersName4 = prompt('Введіть, будь ласка, по-батькові брата чи сестри');
+
+let person2 = lastName2 + ' ' + name2 + ' ' + fathersName2;
+let person3 = lastName3 + ' ' + name3 + ' ' + fathersName3;
+let person4 = lastName4 + ' ' + name4 + ' ' + fathersName4;
+
+console.log(person2);
+console.log(person3);
+console.log(person4);
+
+//- при помощи prompt() получить 3 числа. Привести их к числовому типу при помощи +. вывести их в консоль.
+
+let number4 = +prompt('Введіть перше число');
+let number5 = +prompt('Введіть друге число');
+let number6 = +prompt('Введіть третє число');
+
+console.log(number4);
+console.log(number5);
+console.log(number6);
+
+//- при помощи prompt() получить 4 числа. Привести их к числовому типу при помощи parseInt. Сложить их между собой записав результат в переменную result и вывести в консоль браузера
+let number7 = parseInt(prompt('Введіть перше число'));
+let number8 = parseInt(prompt('Введіть друге число'));
+let number9 = parseInt(prompt('Введіть третє число'));
+let number10 = parseInt(prompt('Введіть четверте число'));
+
+let result = number7 + number8 + number9 + number10;
+console.log(result);
+
+//- при помощи prompt()  получить 3 числа с плавающей точекой. при помощи parseFloat привести их к соответсвующему типу. Сложить их между собой записав результат в переменную result и вывести в консоль браузера
+let number11 = parseFloat(prompt('Введіть перше число'));
+let number12 = parseFloat(prompt('Введіть друге число'));
+let number13 = parseFloat(prompt('Введіть третє число'));
+
+let result2 = number11 + number12 + number13;
+console.log(result2);
+
+//- при помощи prompt()  получить 3 числа с плавающей точекой. Округлить их при помощи Math.round Сложить их между собой записав результат в переменную  и вывести в консоль браузера
+
+let number14 = Math.round(parseFloat(prompt('Enter a first number')));
+let number15 = Math.round(parseFloat(prompt('Enter a second number')));
+let number16 = Math.round(parseFloat(prompt('Enter a third number')));
+
+let result3 = number14 + number15 + number16;
+console.log(result3);
 
 
-//- Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+// - при помощи prompt()  получить 2 целых числа. Привести их к целочисленному типу. Первое число - это число которое будут возводить в степень. Второе число - это число которое является степенью. При помощи Math.pow возвести первое число в степень второго числа.
+let number17 = prompt('Enter first number');
+let number18 = prompt('Enter second number');
 
+console.log(Math.pow(number17, number18));
 
-// let i = 0;
-// while (i < 100) {
-//     console.log(i);
-//     document.write(i);
-//     document.write(`<br>`);
-//     i++
-// }
+//- при помощи prompt()  получить 2 целых числа. Привести их к целочисленному типу. Первое число - это число которое будут возводить в степень. Второе число - это число которое является степенью. При помощи Math.pow возвести первое число в степень второго числа.
+let a = 100;
+let b = '100';
+let c = true;
+let d = undefined;
 
+console.log(typeof a);
+console.log(typeof b);
+console.log(typeof c);
+console.log(typeof d);
 
-//- Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
+//- Поставьте соответствующий оператор в выражениях что бы получился соответсвующий результат.
 
-// for (let i = 0; i < 100; i += 2) {
-//     console.log(i);
-//     document.write(i + `<br>`);
-// }
+let a1 = 5 < 6;
+let a2 = 5 > 6;
+let a3 = 5 === 6;
+let a4 = 5 >= 6;
+console.log(a1);
+console.log(a2);
+console.log(a3);
+console.log(a4);
 
+let b1 = 10 === 10;
+let b2 = 10 >= 10;
+let b3 = 10 > 10;
+let b4 = 10 < 10;
+let b5 = 10 != 10;
+console.log(b1);
+console.log(b2);
+console.log(b3);
+console.log(b4);
+console.log(b5);
 
-// - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
+let c1 = 123 === '123';
+let c2 = 123 == '123';
 
-// for (let i = 0; i < 100; i++) {
-//     if (i % 2 === 0) {
-//         console.log(i);
-//         document.write(i);
-//         document.write(`<br>`)
-//     }
-// }
-
-
-//- Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
-
-// let i = 0;
-// while (i < 100) {
-//     console.log(i);
-//     document.write(i);
-//     document.write(`<br>`);
-//     i +=2;
-// }
-
-
-//- Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
-
-// for (let i = 1; i < 100; i += 2) {
-//     console.log(i);
-//     document.write(i + `<br>`);
-// }
-
-
-//- Відтворити роботу годинника, відрахувавши 2 хвилини (2 цикли! 1й - хвилини, 2й - секунди)
-
-
-// for (let min = 0; min < 60; min++) {
-//     for (let sec = 0; sec < 60; sec++) {
-//         console.log(min + ':' + sec);
-//         if (min === 2 && sec === 0) {
-//             min = 60;
-//             break;
-//         }
-//     }
-// }
-
-
-// !!!!!!!! чесно признаюсь, що це ми побачили код оного з менторів і використали логіку з переприсвоюванням значень, бо без цього зупинялось на 1 год 59 сек і виводилось окремо((
-
-// по аналогії буде зроблено наступне завдання, тільки не зміг перевірити чи працює норм, бо ноут висне від кількості даних:
-
-//- Відтворити роботу годинника, відрахувавши  2 години 20 хвилини (3 цикли! 1й - години, 2й - хвилини, 3й - секунди)
-
-// for (let hours = 0; hours < 24; hours++) {
-//     for (let min = 0; min < 60; min++) {
-//         for (let sec = 0; sec < 60; sec++) {
-//             console.log(hours + ':' + min + ':' + sec);
-//             if (hours === 2 && min === 20 && sec === 0) {
-//                 hours = 24;
-//                 min = 60;
-//                 break;
-//             }
-//         }
-//     }
-// }
-
+console.log(c1);
+console.log(c2);
