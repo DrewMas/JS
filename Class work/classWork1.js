@@ -201,7 +201,7 @@
 // Если светофор в аварийном режиме вывести "делай что хочешь"!
 
 
-// let trafficLight = confirm("Is a traffic light working?") //  я нз чи так можна, якщо "та", то круто, якщо ні, то можна просто прописати else
+// // let trafficLight = confirm("Is a traffic light working?") //  я нз чи так можна, якщо "та", то круто, якщо ні, то можна просто прописати else
 // if (trafficLight === true) {
 //     let color = prompt('What traffic light color do you see?');
 //     let isRoadClear = confirm('Is road clear?');
@@ -222,4 +222,3 @@
 // } else {
 //     alert('Do whatever you want')
 // }
-//
