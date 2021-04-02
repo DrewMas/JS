@@ -76,18 +76,6 @@
 
 // 6) створити функцію яка повертає найменьше число з масиву
 
-// let arr = [10, 44, 8, 5, 4, 7, 46, 54, 64, 6, 4];
-//
-// function arrMin() {
-//     let min = arguments[0];
-//     for (let i = 0; i < arguments.length; i++) {
-//         if (arguments[i] < min) {
-//             min = arguments[i]
-//         }
-//     }return min;
-// }
-// console.log(arrMin(...arr));
-
 // function arrMin(arr) {
 //     let min = arr[0];
 //     for (let i = 0; i < arr.length; i++) {
@@ -102,18 +90,8 @@
 
 // let numbersSum = [10, 44, 8, 5, 1, 7, 46, 54, 64, 6, 4];
 //
-// function sum() {
-//     let sum = 0;
-//     for (let i = 0; i < arguments.length; i++) {
-//         sum += arguments[i];
-//     }
-//     return sum;
-// }
 //
-// console.log(sum(...numbersSum));
-//
-//
-// function sum2(arr) {
+// function sum(arr) {
 //     let sum = 0;
 //     for (let i = 0; i < arr.length; i++) {
 //         sum += arr[i];
@@ -121,7 +99,7 @@
 //     return sum;
 // }
 //
-// console.log(sum2([10, 44, 8, 5, 1, 7, 46, 54, 64, 6, 4]));
+// console.log(sum([10, 44, 8, 5, 1, 7, 46, 54, 64, 6, 4]));
 
 
 // 8) створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
@@ -139,17 +117,50 @@
 // 9) Створити функцію яка приймає масив будь яких объектів, та повертає масив ключів всіх обєктів
 // EXAMPLE:
 //     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ name, age, model ]
+//
+// let users = [
+//     {
+//         name: 'Dima',
+//         age: 13
+//     },
+//     {
+//         model: 'Camry'
+//     }
+// ];
 
-// let getKeys = [{name: 'Dima', age: 13}, {model: 'Camry'}];
-
-
-
-
+// function getKeys(arr) {
+//     let arrOfKeys = [];
+//     for (let keys of arr) {
+//         for (let key in keys) {
+//             arrOfKeys.push(key);
+//         }
+//     }
+//     return arrOfKeys;
+// }
+//
+// let users = getKeys([{name: 'Dima', age: 13}, {model: 'Camry'}])
+// console.log(users);
 
 
 // 10) Створити функцію яка приймає масив будь яких объектів, та повертає масив значень всіх обєктів
 // EXAMPLE:
 //     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ]
+
+// function getValues(arr) {
+//
+//     let arrNew = [];
+//     for (let values of arr) {
+//         for (let value in values) {
+//             arrNew.push(values[value]);
+//         }
+//     }
+//     return arrNew;
+// }
+//
+// let users = getValues([{name: 'Dima', age: 13}, {model: 'Camry'}])
+// console.log(users);
+
+
 // 11) створити функцію  яка скаладає значення елементів з однаковими індексами  та повертає новий результуючий масив.
 //     EXAMPLE:
 // [1,2,3,4]
@@ -157,6 +168,19 @@
 // результат
 //     [3,5,7,9]
 //
+
+
+// function newArr(arrA, arrB) {
+//     let newArr = [];
+//     for (let i = 0; i < arrA.length; i++) {
+//         newArr.push(arrA[i] + arrB[i]);
+//     }
+//     return newArr;
+// }
+//
+// console.log(newArr([1, 2, 3, 4], [2, 3, 4, 5]));
+
+
 //
 // ============================================================================================
 
