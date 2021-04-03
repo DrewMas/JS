@@ -20,11 +20,107 @@
 
 // - Взяти задачі з завдання 10 та 9 та обєднати їх в одну динамічну функцію.
 //     Що б я міг сам вибрати повернути мені масив ключів чи масив значень.
+
+//питає при кожній ітерації, тому можна вибрати в перемішку
+
+// function dynamic(arr) {
+//     let dynamicArr = [];
+//     for (let arrElement of arr) {
+//         for (let item in arrElement) {
+//             if (prompt(`What do yo want to return: 'keys' or 'values'`) === 'keys') {
+//                 dynamicArr.push(item);
+//             } else {
+//                 dynamicArr.push(arrElement[item]);
+//             }
+//         }
+//     }
+//     return dynamicArr;
+// }
+//
+// console.log(dynamic([{name: 'Dima', age: 13}, {model: 'Camry'}]));
+
+//
+// function dynamic(arr) {
+//     let dynamicArr = [];
+//     if (prompt(`What do you want to get: 'keys' or 'values'`) === 'keys') {
+//         for (let arrElement of arr) {
+//             for (let item in arrElement) {
+//                 dynamicArr.push(item);
+//             }
+//         }
+//         return dynamicArr;
+//     }
+//     if (!!'keys') {
+//         for (let arrElement of arr) {
+//             for (let item in arrElement) {
+//                 dynamicArr.push(arrElement[item]);
+//             }
+//         }
+//         return dynamicArr;
+//     }
+// }
+//
+// console.log(dynamic([{name: 'Dima', age: 13}, {model: 'Camry'}]));
+
+
+
+// function getKeys(arr) {
+//     let arrOfKeys = [];
+//     for (let keys of arr) {
+//         for (let key in keys) {
+//             arrOfKeys.push(key);
+//         }
+//     }
+//     console.log(arrOfKeys);
+// }
+//
+//
+// function getValues(arr) {
+//
+//     let arrOfValues = [];
+//     for (let values of arr) {
+//         for (let value in values) {
+//             arrOfValues.push(values[value]);
+//         }
+//     }
+//     console.log(arrOfValues);
+// }
+//
+//
+// function getDynamic(arrOfObjects, returnType = 'keys') {
+//     if (returnType === 'keys') {
+//         return getKeys(arrOfObjects);
+//
+//     } else if (returnType === 'values') {
+//         return getValues(arrOfObjects);
+//
+//     } else {
+//         return false;
+//     }
+// }
+//
+// getDynamic([{name: 'Dima', age: 13}, {model: 'Camry'}], 'values');
+
+
 // - Приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
 //   EXAMPLE:
 //   foo([9,8,0,4], 0) // ==> [ 8, 9, 0, 4 ]
 //   foo([9,8,0,4], 1) // ==> [ 9 ,0, 8, 4 ]
 //   foo([9,8,0,4], 2) // ==> [ 9, 8, 4, 0 ]
+
+
+function swap(arr, i) {
+    if(i < arr.length){
+        const swapper = arr[i];
+        arr[i] = arr [i+1]
+        arr[i+1] = swapper;
+
+        console.log(arr);
+    }
+}
+swap([9,8,0,4],0)
+
+
 //
 // - Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
 // Двожина масиву від 2 до 100
