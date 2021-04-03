@@ -22,35 +22,35 @@
 // 3) створити функцію яка приймає три числа та виводить найменьше. (Без Math.min!)
 
 // function numberMin(a, b, c) {
-//     if (a < b && a < c) {
+//     if (a <= b && a <= c) {
 //         console.log(a);
 //         return (a);
 //     }
-//     if (b < c && b < a) {
+//     if (b <= c && b <= a) {
 //         console.log(b);
 //         return (b);
 //     }
-//     if (c < b && c < a) {
+//     if (c <= b && c <= a) {
 //         console.log(c);
 //         return (c);
 //     }
 // }
 //
-// numberMin(5, 2, 9);
+// numberMin(1, 1, 3);
 
 
 // 4) створити функцію яка приймає три числа та виводить найбільше. (Без Math.max!)
 
 // function numberMax(a, b, c) {
-//     if (a > b && a > c) {
+//     if (a >= b && a >= c) {
 //         console.log(a);
 //         return (a);
 //     }
-//     if (b > c && b > a) {
+//     if (b >= c && b >= a) {
 //         console.log(b);
 //         return (b);
 //     }
-//     if (c > a && c > b) {
+//     if (c >= a && c >= b) {
 //         console.log(c);
 //         return (c);
 //     }
@@ -135,11 +135,11 @@
 //             arrOfKeys.push(key);
 //         }
 //     }
+//     console.log(arrOfKeys);
 //     return arrOfKeys;
 // }
 //
-// let users = getKeys([{name: 'Dima', age: 13}, {model: 'Camry'}])
-// console.log(users);
+// getKeys([{name: 'Dima', age: 13}, {model: 'Camry'}])
 
 
 // 10) Створити функцію яка приймає масив будь яких объектів, та повертає масив значень всіх обєктів
@@ -148,17 +148,18 @@
 
 // function getValues(arr) {
 //
-//     let arrNew = [];
+//     let arrOfValues = [];
 //     for (let values of arr) {
 //         for (let value in values) {
-//             arrNew.push(values[value]);
+//             arrOfValues.push(values[value]);
 //         }
 //     }
-//     return arrNew;
+//     console.log(arrOfValues);
+//     return arrOfValues;
 // }
 //
-// let users = getValues([{name: 'Dima', age: 13}, {model: 'Camry'}])
-// console.log(users);
+// getValues([{name: 'Dima', age: 13}, {model: 'Camry'}])
+
 
 
 // 11) створити функцію  яка скаладає значення елементів з однаковими індексами  та повертає новий результуючий масив.
@@ -183,4 +184,6 @@
 
 //
 // ============================================================================================
+
+
 
