@@ -63,7 +63,6 @@
 // console.log(dynamic([{name: 'Dima', age: 13}, {model: 'Camry'}]));
 
 
-
 // function getKeys(arr) {
 //     let arrOfKeys = [];
 //     for (let keys of arr) {
@@ -109,16 +108,16 @@
 //   foo([9,8,0,4], 2) // ==> [ 9, 8, 4, 0 ]
 
 
-function swap(arr, i) {
-    if(i < arr.length){
-        const swapper = arr[i];
-        arr[i] = arr [i+1]
-        arr[i+1] = swapper;
-
-        console.log(arr);
-    }
-}
-swap([9,8,0,4],0)
+// function swap(arr, i) {
+//     if(i < arr.length){
+//         const swapper = arr[i];
+//         arr[i] = arr [i+1]
+//         arr[i+1] = swapper;
+//
+//         console.log(arr);
+//     }
+// }
+// swap([9,8,0,4],0)
 
 
 //
@@ -128,7 +127,28 @@ swap([9,8,0,4],0)
 // [1,0,6,0,3] => [1,6,3,0,0]
 // [0,1,2,3,4] => [1,2,3,4,0]
 // [0,0,1,0]   => [1,0,0,0]
+
+
+// function shift(arr) {
+//     let zeroes = [];
+//     let numbers = [];
 //
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] === 0) {
+//             zeroes.push(0);
+//         } else {
+//             numbers.push(arr[i]);
+//         }
+//     } return numbers.concat(zeroes);
+//
+// }
+//
+// console.log(shift([1, 0, 6, 0, 3]));
+// console.log(shift([0, 1, 2, 3, 4]));
+// console.log(shift([0, 0, 1, 0]));
+
+
+
 // - Дано список імен.
 // let n1 = '    Harry       Potter      '
 // let n2 = '    Ron       Whisley      '
@@ -137,6 +157,16 @@ swap([9,8,0,4],0)
 // let n1 = 'Harry Potter'
 // let n2 = 'Ron Whisley'
 // let n3 = 'Hermione Granger'
+
+// function spacesCorrector(name) {
+//     name = name.trim();
+//     name = name.replace(/ +/g, ' ');
+//     console.log(name);
+// }
 //
+// spacesCorrector('    Harry       Potter      ');
+// spacesCorrector('    Ron       Weasley      ');
+// spacesCorrector('    Hermione       Granger      ');
+
 // ============================================================================================
 
