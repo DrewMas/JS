@@ -122,15 +122,15 @@
 //     },
 //     increaseMaxSpeed: function (newSpeed){
 //         this.maxSpeed += newSpeed;
-//         console.log(car.maxSpeed);
+//         console.log(this.maxSpeed);
 //     },
 //     changeYear: function (newValue) {
 //         this.year = newValue;
-//         console.log(car.year);
+//         console.log(this.year);
 //     },
 //     addDriver: function (driver) {
 //         this.driver = driver;
-//         console.log(car.driver);
+//         console.log(this.driver);
 //     }
 // }
 //
