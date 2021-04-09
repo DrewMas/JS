@@ -192,6 +192,16 @@ console.log(usersWithAddress.filter(value => value.address.number % 2 === 0));
 // -- Порахувати загальний вік всіх людей. (reduce)
 console.log(usersWithAddress.reduce((acc, value) => {
     return acc + value.age;
-},0));
+}, 0));
 
 // -- Ті, хто одружений і старий за 30 має отримати обєкти child і попасти в новий масив (reduce)
+
+let child = usersWithAddress.reduce((acc, currentValue) => {
+    if (currentValue.isMarried === true && currentValue.age > 30) {
+        currentValue.child = true;
+        acc.push(currentValue);
+    }
+    return acc;
+}, []);
+console.log(child);
+
