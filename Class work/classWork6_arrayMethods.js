@@ -217,12 +217,12 @@
 //     Створити не менше 7 та не більше 20 машинок.
 
 class Car {
-    constructor(producer, enginePower, price, year, owner) {
+    constructor(producer, enginePower, price, year, driver) {
         this.producer = producer;
         this.enginePower = enginePower;
         this.price = price;
         this.year = year;
-        this.owner = owner;
+        this.driver = driver;
 
     }
 }
@@ -240,22 +240,57 @@ let cars = [car1, car2, car3, car4, car5, car6, car7, car8];
 
 
 //Зробили половину автопарку ремонт мотору, що збільшить потужність автомобілів на 10% (переприсвоєння змінної потужності).
-
-for (let i = 0; i < cars.length; i+=2) {
-    cars[i].enginePower += cars[i].enginePower * 0.1;
-    }
-console.log(cars);
-
 // На відремонтовані автомобілі найняти нових водіїв (переприсвоїти змінну водій).
+
+let newDrivers = ['olya', '', 'katya', '', 'misha', '', 'sasha'];
+
+for (let i = 0; i < cars.length; i += 2) {
+    cars[i].enginePower += cars[i].enginePower * 0.1;
+    cars[i].driver = newDrivers[i];
+}
+console.log(cars);
 
 
 // Для початку вкладіть всі наші створені автомобілі в масив cars.
+
+
 //     Далі необхідно рати кожну другу машинку (цикл з кроком в 2), та робити їй підвищення потужності двигуна на 10% та ціну на 5%
+//
+for (let i = 0; i < newDrivers.length; i += 2) {
+    cars[i].enginePower += cars[i].enginePower * 0.1;
+    cars[i].price += cars[i].price * 0.05;
+}
+console.log(cars);
+
+
 // Після того зробити перевірку досвіду ВСІХ наших водіїв. Якщо досвід водія менший за 5 років, але його вік більший за 25,
 //     то необідно відправити його на курси підвищення кваліфікації, що збільшить йому досвід на 1 рік.
+
+// for (const checking of cars) {
+//     if (checking.driver.experience < 5 && checking.driver.age > 25) {
+//         checking.driver.experience++
+//     }
+// }
+// console.log(cars);
+
+// OR
+
+cars.forEach(value => {
+        if (value.driver.experience < 5 && value.driver.age > 25) {
+            value.driver.experience++
+        }
+    }
+);
+console.log(cars);
+
 //     Також спробуйте порахувати суму, яку потрібно потратити для покупки всіх цих авто в циклі
-//
-//
+
+let totalPrice = 0;
+cars.forEach(value => totalPrice += value.price);
+console.log(totalPrice);
+
+
+
 // Задача: дан отсортированный по возрастанию массив целых чисел.
 //     Необходимо вернуть наименьший и наибольший индекс заданного элемента.
 //     Входные данные: arr — массив целых чисел значения которых по модулю не больше 10. Размер массива не более 10 элементов.
