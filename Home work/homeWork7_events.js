@@ -32,48 +32,75 @@
 // Вивести список коментарів в документ, кожний в своєму блоці.
 //     Додайте кожному коментарю по кнопці для згортання його body.
 
-let comments = [
-    {title: 'Comment 1', body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit'},
-    {title: 'Comment 2', body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit'},
-    {title: 'Comment 3', body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit'},
-    {title: 'Comment 4', body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit'},
-    {title: 'Comment 5', body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit'}
-]
-
-const mainDivka = document.createElement('div');
-mainDivka.innerText = 'List';
-
-comments.forEach(ev => {
-    const divka = document.createElement('div');
-    const title = document.createElement('h3');
-    const body = document.createElement('p');
-    const button = document.createElement('button');
-    button.innerText = 'Delete';
-
-    button.onclick = () => {
-        body.hidden = !body.hidden;
-    }
-
-    title.innerText = ev.title;
-    body.innerText = ev.body;
-
-    mainDivka.appendChild(divka);
-    divka.appendChild(title);
-    divka.appendChild(body);
-    divka.appendChild(button);
-})
-
-document.body.appendChild(mainDivka);
+// let comments = [
+//     {title: 'Comment 1', body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit'},
+//     {title: 'Comment 2', body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit'},
+//     {title: 'Comment 3', body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit'},
+//     {title: 'Comment 4', body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit'},
+//     {title: 'Comment 5', body: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit'}
+// ]
+//
+// const mainDivka = document.createElement('div');
+// mainDivka.innerText = 'List';
+//
+// comments.forEach(ev => {
+//     const divka = document.createElement('div');
+//     const title = document.createElement('h3');
+//     const body = document.createElement('p');
+//     const button = document.createElement('button');
+//     button.innerText = 'Delete';
+//
+//     button.onclick = () => {
+//         body.hidden = !body.hidden;
+//     }
+//
+//     title.innerText = ev.title;
+//     body.innerText = ev.body;
+//
+//     mainDivka.appendChild(divka);
+//     divka.appendChild(title);
+//     divka.appendChild(body);
+//     divka.appendChild(button);
+// })
+//
+// document.body.appendChild(mainDivka);
 
 // - Створити 2 форми  по 2 інпути в кожній. створити кнопку при кліку на яку зчитується та виводиться на консоль інформація з цих 2х форм.
 //     Кнопка повинна лежати за межами форм (Щоб уникнути  перезавантаження сторінки)
 // Доступ до інпутів через Forms API. Отже дайте формі та інпутам всі необхідні атрибути.
+
+// let button = document.getElementById('btn5');
+// button.onclick = () => {
+//     for (const element of document.forms) {
+//         for (const form of element) {
+//             console.log(form.value);
+//         }
+//     }
+// }
 
 
 // - Створити функцію, яка генерує таблицю.
 //     Перший аргумент визначає кількість строк.
 //     Другий параметр визначає кількість ячейок в кожній строці.
 //     Третій параметр визначає елемент в який потрібно таблицю додати.
+
+function tableCreation(rows, columns, element) {
+    const table = document.createElement('table');
+    for (let i = 0; i < rows; i++) {
+        let tr = document.createElement('tr');
+        table.appendChild(tr);
+        for (j = 0; j < columns; j++) {
+            let td = document.createElement('td');
+            tr.appendChild(td);
+            td.innerText = element;
+        }
+    }
+    document.body.appendChild(table);
+}
+
+tableCreation(5, 8, 'one');
+
+
 // - Напишіть «Карусель» – стрічку зображень, яку можна гортати вліво-вправо нажаттям на стрілочки.
 //
 
